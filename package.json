@@ -7,8 +7,10 @@
     "dev": "next dev",
     "lint:check": "prettier --check .",
     "lint:fix": "prettier --write .",
-    "test" : "jest",
-    "test:watch" : "jest --watch"
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "docker": "docker compose -f infra/compose.yaml up",
+    "psql:connect": "psql --host=localhost --username=postgres --port:5432"
   },
   "author": "",
   "license": "MIT",
